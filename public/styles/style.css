@@ -34,7 +34,6 @@ p {
 .site-header {
     display: flex;
     justify-content: space-between;
-    justify-content: center;
     align-items: center;
     padding: 1rem 2rem;
     background-color: var(--color-primary);
@@ -58,7 +57,7 @@ p {
 .navigation {
     display: flex;
     transition: transform 0.3s ease;
-    transform: translateY(-100%);
+    /* transform: translateY(-100%); */
 }
 
 .navigation ul {
