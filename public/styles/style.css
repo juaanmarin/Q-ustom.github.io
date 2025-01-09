@@ -34,6 +34,7 @@ p {
 .site-header {
     display: flex;
     justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 1rem 2rem;
     background-color: var(--color-primary);
@@ -47,8 +48,8 @@ p {
 }
 
 /* Logo */
-.logo h1{
-    height: 50px;
+.logo img{
+    height: 70px;
     max-width: 100%;
     color: var(--color-secondary);
 }
