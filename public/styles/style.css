@@ -48,8 +48,8 @@ p {
 
 /* Logo */
 .logo img{
-    height: 70px;
-    max-width: 100%;
+    width: 170px;
+    /* max-width: 100%; */
     color: var(--color-secondary);
 }
 
