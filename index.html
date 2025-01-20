@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="public/img/5-removebg-preview.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
     <title>Q-ustom</title>
     <link rel="stylesheet" href="public/styles/style.css">
 </head>
@@ -14,17 +17,21 @@
         <div class="logo">
             <img src="public/img/3-preview.png" alt="">
         </div>
-        <nav class="navigation">
+        <button class="menu-toggle">☰</button>
+        <div class="navigation">
             <ul>
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#about">Sobre Nosotros</a></li>
-                <li><a href="#products">Productos</a></li>
-                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#">Inicio</a></li>
+                <li class="menu-item-with-submenu"> <a href="#" class="menu-link">Productos</a>
+                    <ul class="submenu">
+                        <li><a class="menuitem" href="views/girl.html">Girl</a></li>
+                        <li><a class="menuitem" href="views/men.html">Men</a></li>
+                        <li><a class="menuitem" href="views/info.html">Envases</a></li>
+                    </ul>
+                </li>
+                <li><a href="views/info.html">Nosotros</a></li>
+                <li><a href="views/contact.html">Contacto</a></li>
             </ul>
-        </nav>
-        <button class="menu-toggle" aria-label="Abrir menú">
-            ☰
-        </button>
+        </div>
     </header>
 
     <section class="perfume-gallery">
