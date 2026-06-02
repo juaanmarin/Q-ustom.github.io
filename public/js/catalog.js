@@ -20,12 +20,12 @@
       .replace(/>/g, '&gt;');
   }
 
-  const path = window.location.pathname;
+  const filter = gallery.dataset.filter;
   let perfumes;
 
-  if (path.includes('men.html')) {
+  if (filter === 'men') {
     perfumes = perfumesData.filter(p => p.category === 'men' || p.category === 'unisex');
-  } else if (path.includes('girl.html')) {
+  } else if (filter === 'women') {
     perfumes = perfumesData.filter(p => p.category === 'women' || p.category === 'unisex');
   } else {
     perfumes = perfumesData.filter(p => p.stock === true);
