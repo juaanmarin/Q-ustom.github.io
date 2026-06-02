@@ -191,7 +191,7 @@ const perfumesData = [
     brand: 'Paco Rabanne',
     category: 'men',
     stock: false,
-    image: '',
+    image: 'data:image/jpeg;base64,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',
     notes: 'Pomelo, hoja de laurel, madera de guayaco, ámbar, almizcle',
     description: 'Fresco, acuático y lleno de energía. Invictus es el perfume del campeón, diseñado para los hombres que nunca se rinden y dejan huella donde pasan.'
   },
@@ -261,7 +261,7 @@ const perfumesData = [
     brand: 'Hugo Boss',
     category: 'men',
     stock: false,
-    image: 'https://www.perfumesbogota.com.co/cdn/shop/products/5901c8d8330ff0632ebddd8db5eca693_580x.jpg?v=1677729376',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3RSZDbLGwxHiLq8Ix9ItX1v3dx3ATd0J7Wg&s',
     notes: 'Lavanda, cardamomo, abedul, almizcle, caoba',
     description: 'Misterioso y nocturno, Boss Bottled Night es el perfume del hombre que brilla cuando cae el sol. Oscuro, amaderado y profundamente seductor para las noches especiales.'
   },
@@ -316,7 +316,7 @@ const perfumesData = [
     brand: 'Carolina Herrera',
     category: 'women',
     stock: false,
-    image: 'https://mwhite.com.co/cdn/shop/files/carolina-herrera-212-vip-rose-80ml-perfumes-877.webp?v=1713416769',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrAxRdUlzS7maLBtkaeQS-ab2v-FmWODFwkQ&s',
     notes: 'Gardenia, rosa, champán, almizcle, cedro',
     description: 'La vida de fiesta en un frasco. Efervescente y radiante, está diseñada para las mujeres que brillan en cualquier evento con elegancia y actitud.'
   },
@@ -336,7 +336,7 @@ const perfumesData = [
     brand: 'Dior',
     category: 'women',
     stock: false,
-    image: 'https://perfumeriaonline.com.co/cdn/shop/products/4078572_2_1200x1200.jpg?v=1652747637',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbeimLBeQT4MTn6qLoB3fqLnEY11BPDUduKA&s',
     notes: 'Rosa de mayo, magnolia, bergamota, almizcle blanco',
     description: 'Un himno a la alegría. Esta fragancia celebra la feminidad con una explosión de flores frescas y una luminosidad incomparable que eleva el espíritu.'
   },
@@ -346,7 +346,7 @@ const perfumesData = [
     brand: 'Chanel',
     category: 'women',
     stock: false,
-    image: 'https://www.perfumesbogota.com.co/cdn/shop/products/D_NQ_NP_784089-MCO44327037381_122020-O_580x.jpg?v=1677773718',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTORMiRe1zzVzf9hUzTd0FLkb6Jmg__5jRh1w&s',
     notes: 'Pomelo, jacinto, jazmín, iris, almizcle blanco',
     description: 'La versión más ligera y delicada de Chance. Un perfume que parece capturar la primavera en cada spray: fresco, floral y eternamente femenino.'
   },
@@ -366,7 +366,7 @@ const perfumesData = [
     brand: 'Esika',
     category: 'women',
     stock: false,
-    image: 'https://belcorpcolombia.vtexassets.com/arquivos/ids/940029/200086432-FotoFondoBlanco.jpg?v=638315184089930000',
+    image: 'https://belcorpcolombia.vtexassets.com/arquivos/ids/1118667-800-800?v=639149623080600000&width=800&height=800&aspect=true',
     notes: 'Fresia, rosa, almizcle, madera de cedro',
     description: 'Femenina y moderna, Expression captura la esencia de la mujer latinoamericana: apasionada, elegante y siempre radiante. Un aroma que acompaña en cada momento del día.'
   },
