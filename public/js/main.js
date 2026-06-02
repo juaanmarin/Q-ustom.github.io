@@ -32,20 +32,30 @@ document.querySelectorAll('.submenu a').forEach(item => {
 // ── Modal de perfume ──
 const modal = document.getElementById('perfumeModal');
 if (modal) {
-    const modalImg   = document.getElementById('modalImg');
-    const modalName  = document.getElementById('modalName');
-    const modalHouse = document.getElementById('modalHouse');
-    const modalNotes = document.getElementById('modalNotes');
-    const modalDesc  = document.getElementById('modalDesc');
-    const modalClose = document.querySelector('.modal-close');
+    const modalImg    = document.getElementById('modalImg');
+    const modalName   = document.getElementById('modalName');
+    const modalHouse  = document.getElementById('modalHouse');
+    const modalNotes  = document.getElementById('modalNotes');
+    const modalDesc   = document.getElementById('modalDesc');
+    const modalGender = document.getElementById('modalGender');
+    const modalClose  = document.querySelector('.modal-close');
+
+    const genderLabel = { men: 'Caballero', women: 'Dama', unisex: 'Unisex' };
+    const genderClass = { men: 'modal-gender--men', women: 'modal-gender--women', unisex: 'modal-gender--unisex' };
 
     function openModal(card) {
-        modalImg.src           = card.querySelector('img').src;
-        modalImg.alt           = card.querySelector('img').alt;
+        const img = card.querySelector('img');
+        modalImg.src           = img ? img.src : '';
+        modalImg.alt           = img ? img.alt : card.dataset.name;
         modalName.textContent  = card.dataset.name;
         modalHouse.textContent = card.dataset.house;
         modalNotes.textContent = card.dataset.notes;
         modalDesc.textContent  = card.dataset.description;
+        if (modalGender) {
+            const cat = card.dataset.category || 'unisex';
+            modalGender.textContent = genderLabel[cat] || cat;
+            modalGender.className   = `modal-gender ${genderClass[cat] || ''}`;
+        }
         modal.classList.add('active');
         document.body.style.overflow = 'hidden';
     }
